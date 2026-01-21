@@ -1,0 +1,23 @@
+{
+  "title": "1. The Orchestra: Docker Compose",
+  "description": "Stop running 5 `docker run` commands. Define your entire stack in one file.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Compose Up",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

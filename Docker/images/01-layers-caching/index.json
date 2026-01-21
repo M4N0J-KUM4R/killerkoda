@@ -1,0 +1,23 @@
+{
+  "title": "1. The Onion: Layers & Caching",
+  "description": "Understand how Docker images are built in layers and how to leverage caching for speed.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Inspecting Layers",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

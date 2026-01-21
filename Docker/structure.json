@@ -1,9 +1,37 @@
 {
   "items": [
     {
-      "path": "containers",
-      "title": "Container Fundamentals",
-      "description": "Master the basics: Kernel, Namespaces, and Lifecycle."
+      "path": "containers/01-kernel-vs-userspace"
+    },
+    {
+      "path": "containers/02-namespaces-cgroups"
+    },
+    {
+      "path": "containers/03-running-first-container"
+    },
+    {
+      "path": "containers/04-lifecycle-management"
+    },
+    {
+      "path": "containers/05-cmd-vs-entrypoint"
+    },
+    {
+      "path": "containers/06-troubleshooting-containers"
+    },
+    {
+      "path": "images/01-layers-caching"
+    },
+    {
+      "path": "volumes/01-bind-mounts-vs-volumes"
+    },
+    {
+      "path": "networks/01-container-networking"
+    },
+    {
+      "path": "dockerfile/01-basic-recipe"
+    },
+    {
+      "path": "docker-compose/01-first-compose-up"
     }
   ]
 }

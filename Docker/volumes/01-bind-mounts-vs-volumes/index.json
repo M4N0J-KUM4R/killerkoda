@@ -1,0 +1,23 @@
+{
+  "title": "1. Persistence: Bind Mounts vs Volumes",
+  "description": "Don't lose your data! Learn the difference between mapping a host folder and managing docker volumes.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Bind Mounts (The Direct Link)",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

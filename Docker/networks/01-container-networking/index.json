@@ -1,0 +1,23 @@
+{
+  "title": "1. Connecting the Dots: Container Networking",
+  "description": "How do containers talk to each other? Learn about the Docker Bridge and DNS.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Ping Pong (The Bridge Network)",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
