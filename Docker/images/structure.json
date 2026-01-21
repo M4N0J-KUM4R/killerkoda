@@ -1,0 +1,10 @@
+{
+  "title": "Module: Images",
+  "description": "Learn how to build, manage, and optimize Docker Images.",
+  "items": [
+    {
+      "path": "01-layers-caching",
+      "title": "1. Layers & Caching"
+    }
+  ]
+}

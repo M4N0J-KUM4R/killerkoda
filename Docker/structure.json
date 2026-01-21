@@ -1,37 +1,30 @@
 {
+  "title": "Docker: Zero to Hero",
+  "description": "A complete interactive course to master Docker from scratch.",
   "items": [
     {
-      "path": "containers/01-kernel-vs-userspace"
+      "path": "containers",
+      "title": "Module 1: Containers"
     },
     {
-      "path": "containers/02-namespaces-cgroups"
+      "path": "images",
+      "title": "Module 2: Images"
     },
     {
-      "path": "containers/03-running-first-container"
+      "path": "volumes",
+      "title": "Module 3: Volumes"
     },
     {
-      "path": "containers/04-lifecycle-management"
+      "path": "networks",
+      "title": "Module 4: Networks"
     },
     {
-      "path": "containers/05-cmd-vs-entrypoint"
+      "path": "dockerfile",
+      "title": "Module 5: Dockerfile"
     },
     {
-      "path": "containers/06-troubleshooting-containers"
-    },
-    {
-      "path": "images/01-layers-caching"
-    },
-    {
-      "path": "volumes/01-bind-mounts-vs-volumes"
-    },
-    {
-      "path": "networks/01-container-networking"
-    },
-    {
-      "path": "dockerfile/01-basic-recipe"
-    },
-    {
-      "path": "docker-compose/01-first-compose-up"
+      "path": "docker-compose",
+      "title": "Module 6: Docker Compose"
     }
   ]
 }

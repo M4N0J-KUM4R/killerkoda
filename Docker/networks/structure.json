@@ -1,0 +1,10 @@
+{
+  "title": "Module: Networks",
+  "description": "Connecting containers securely.",
+  "items": [
+    {
+      "path": "01-container-networking",
+      "title": "1. Container Networking"
+    }
+  ]
+}

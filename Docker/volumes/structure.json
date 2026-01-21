@@ -1,0 +1,10 @@
+{
+  "title": "Module: Volumes",
+  "description": "Persisting data beyond the container lifecycle.",
+  "items": [
+    {
+      "path": "01-bind-mounts-vs-volumes",
+      "title": "1. Bind Mounts vs Volumes"
+    }
+  ]
+}

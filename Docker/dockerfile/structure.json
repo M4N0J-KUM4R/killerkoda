@@ -1,0 +1,10 @@
+{
+  "title": "Module: Dockerfile",
+  "description": "The art of writing infrastructure as code.",
+  "items": [
+    {
+      "path": "01-basic-recipe",
+      "title": "1. Basic Recipe"
+    }
+  ]
+}

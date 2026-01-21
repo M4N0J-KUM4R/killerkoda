@@ -1,0 +1,10 @@
+{
+  "title": "Module: Docker Compose",
+  "description": "Orchestrating multi-container applications.",
+  "items": [
+    {
+      "path": "01-first-compose-up",
+      "title": "1. First Compose Up"
+    }
+  ]
+}
