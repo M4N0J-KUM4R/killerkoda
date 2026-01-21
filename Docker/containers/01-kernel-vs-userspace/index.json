@@ -1,0 +1,28 @@
+{
+  "title": "1. The Matrix: Kernel vs Userspace",
+  "description": "Understand the fundamental difference between the Host Kernel and Container Userspace.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "One Kernel to Rule Them All",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Different Worlds (Userspaces)",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

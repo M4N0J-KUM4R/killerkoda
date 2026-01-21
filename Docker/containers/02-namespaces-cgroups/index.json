@@ -1,6 +1,6 @@
 {
-  "title": "Scenario: The Intern's First Deploy",
-  "description": "Help a new team member containerize a static website.",
+  "title": "2. Under the Hood: Namespaces & Cgroups",
+  "description": "The secret sauce of containers. Learn how Linux isolates processes and limits resources.",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -8,12 +8,12 @@
     },
     "steps": [
       {
-        "title": "Inspect the Code",
+        "title": "The Illusion of Isolation (Namespaces)",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Containerize and Ship",
+        "title": "The Walls of the Prison (Cgroups)",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }

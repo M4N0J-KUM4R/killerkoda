@@ -1,7 +1,22 @@
 {
-    "items": [
-      { "path": "basic" },
-      { "path": "intermediate" },
-      { "path": "master" }
-    ]
+  "items": [
+    {
+      "path": "01-kernel-vs-userspace"
+    },
+    {
+      "path": "02-namespaces-cgroups"
+    },
+    {
+      "path": "03-running-first-container"
+    },
+    {
+      "path": "04-lifecycle-management"
+    },
+    {
+      "path": "05-cmd-vs-entrypoint"
+    },
+    {
+      "path": "06-troubleshooting-containers"
+    }
+  ]
 }

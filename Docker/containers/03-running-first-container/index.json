@@ -1,0 +1,28 @@
+{
+  "title": "3. Ignition: Running Your First Container",
+  "description": "Stop talking, start running. Launch an enterprise-grade Nginx web server.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Hello, Docker!",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Opening the Gates (Port Mapping)",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
