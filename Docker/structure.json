@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "path": "docker"
+    },
+    {
+      "path": "containers"
+    },
+    {
+      "path": "images"
+    },
+    {
+      "path": "dockerfile"
+    },
+    {
+      "path": "volumes"
+    },
+    {
+      "path": "networks"
+    },
+    {
+      "path": "docker-compose"
+    },
+    {
+      "path": "scenarios"
+    }
+  ]
+}

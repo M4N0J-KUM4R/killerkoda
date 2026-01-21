@@ -1,0 +1,43 @@
+{
+    "title": "Variables",
+    "description": "Create variables and learn about data types, arithmetic operators, and user input.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "setup.sh"
+      },
+      "steps": [
+        {
+          "title": "Data Types",
+          "text": "exercise_6/text.md",
+          "verify": "exercise_6/verify.sh"
+        },
+        {
+          "title": "Temperature",
+          "text": "exercise_7/text.md",
+          "verify": "exercise_7/verify.sh"
+        },
+        {
+          "title": "BMI",
+          "text": "exercise_8/text.md",
+          "verify": "exercise_8/verify.sh"
+        },
+        {
+          "title": "Pythagorean",
+          "text": "exercise_9/text.md",
+          "verify": "exercise_9/verify.sh"
+        },
+        {
+          "title": "Currency",
+          "text": "exercise_10/text.md",
+          "verify": "exercise_10/verify.sh"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+}

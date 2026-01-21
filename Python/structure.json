@@ -1,0 +1,14 @@
+{
+    "items": [
+      { "path": "hello_world" },
+      { "path": "variables" },
+      { "path": "control_flow" },
+      { "path": "loops" },
+      { "path": "checkpoint_project" },
+      { "path": "lists" },
+      { "path": "functions" },
+      { "path": "classes_&_objects" },
+      { "path": "modules" },
+      { "path": "final_project" }
+    ]
+}

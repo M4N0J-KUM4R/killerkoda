@@ -1,0 +1,43 @@
+{
+    "title": "Modules",
+    "description": "Import built-in modules and learn how to create our own.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "setup.sh"
+      },
+      "steps": [
+        {
+          "title": "Slot Machine",
+          "text": "exercise_39/text.md",
+          "verify": "exercise_39/verify.sh"
+        },
+        {
+          "title": "Solar System",
+          "text": "exercise_40/text.md",
+          "verify": "exercise_40/verify.sh"
+        },
+        {
+          "title": "Countdown",
+          "text": "exercise_41/text.md",
+          "verify": "exercise_41/verify.sh"
+        },
+        {
+          "title": "Forty Two",
+          "text": "exercise_42/text.md",
+          "verify": "exercise_42/verify.sh"
+        },
+        {
+          "title": "Zen of Python",
+          "text": "exercise_43/text.md",
+          "verify": "exercise_43/verify.sh"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+}

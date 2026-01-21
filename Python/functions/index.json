@@ -1,0 +1,48 @@
+{
+    "title": "Functions",
+    "description": "Define and call a function – reusable block of code that performs a specific task.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "setup.sh"
+      },
+      "steps": [
+        {
+          "title": "D.R.Y.",
+          "text": "exercise_28/text.md",
+          "verify": "exercise_28/verify.sh"
+        },
+        {
+          "title": "Fortune Cookie",
+          "text": "exercise_29/text.md",
+          "verify": "exercise_29/verify.sh"
+        },
+        {
+          "title": "Mars Orbiter",
+          "text": "exercise_30/text.md",
+          "verify": "exercise_30/verify.sh"
+        },
+        {
+          "title": "Calculator",
+          "text": "exercise_31/text.md",
+          "verify": "exercise_31/verify.sh"
+        },
+        {
+          "title": "Stonks",
+          "text": "exercise_32/text.md",
+          "verify": "exercise_32/verify.sh"
+        },
+        {
+          "title": "Drive-Thru",
+          "text": "exercise_33/text.md",
+          "verify": "exercise_33/verify.sh"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+}

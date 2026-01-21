@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "path": "intern-web-deploy"
+    },
+    {
+      "path": "debug-redis"
+    },
+    {
+      "path": "data-backup"
+    }
+  ]
+}

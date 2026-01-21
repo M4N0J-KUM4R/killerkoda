@@ -1,0 +1,7 @@
+{
+    "items": [
+      { "path": "basic" },
+      { "path": "intermediate" },
+      { "path": "master" }
+    ]
+}
