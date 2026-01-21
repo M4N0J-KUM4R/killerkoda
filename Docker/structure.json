@@ -5,8 +5,5 @@
       "title": "Container Fundamentals",
       "description": "Master the basics: Kernel, Namespaces, and Lifecycle."
     }
-    {
-      "path": "containers"
-    }
   ]
 }
