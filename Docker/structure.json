@@ -1,9 +1,6 @@
 {
   "items": [
     {
-      "path": "docker"
-    },
-    {
       "path": "containers"
     },
     {
@@ -20,9 +17,6 @@
     },
     {
       "path": "docker-compose"
-    },
-    {
-      "path": "scenarios"
     }
   ]
 }

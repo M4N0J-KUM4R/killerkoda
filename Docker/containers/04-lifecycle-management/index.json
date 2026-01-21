@@ -1,0 +1,28 @@
+{
+  "title": "4. The Circle of Life: Container Lifecycle",
+  "description": "Birth, Death, and Resurrection. Master the `docker` commands to control container states.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Stop, Drop, and Roll (Stop vs Kill)",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "The Immortal Container (Restart Policies)",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

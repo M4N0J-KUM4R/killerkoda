@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "path": "01-first-compose-up"
+    },
+    {
+      "path": "02-scaling-services"
+    }
+  ]
+}

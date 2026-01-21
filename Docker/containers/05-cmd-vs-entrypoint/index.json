@@ -1,0 +1,28 @@
+{
+  "title": "5. CMD vs ENTRYPOINT: The Bomb Defusal Squad",
+  "description": "Solve the mystery of container startup commands. Learn the difference between CMD and ENTRYPOINT.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "CMD: The Recommendation",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "ENTRYPOINT: The Mandate",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

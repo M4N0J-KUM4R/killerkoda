@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "path": "01-container-networking"
+    },
+    {
+      "path": "02-service-discovery"
+    }
+  ]
+}
