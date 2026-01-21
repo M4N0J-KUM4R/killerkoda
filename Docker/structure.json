@@ -1,22 +1,12 @@
 {
   "items": [
     {
+      "path": "containers",
+      "title": "Container Fundamentals",
+      "description": "Master the basics: Kernel, Namespaces, and Lifecycle."
+    }
+    {
       "path": "containers"
-    },
-    {
-      "path": "images"
-    },
-    {
-      "path": "dockerfile"
-    },
-    {
-      "path": "volumes"
-    },
-    {
-      "path": "networks"
-    },
-    {
-      "path": "docker-compose"
     }
   ]
 }
