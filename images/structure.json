@@ -5,6 +5,30 @@
     {
       "path": "01-layers-caching",
       "title": "1. Layers & Caching"
+    },
+    {
+      "path": "02-tagging",
+      "title": "2. The Identity Crisis (Tagging)"
+    },
+    {
+      "path": "03-commit-changes",
+      "title": "3. DIY Image (Commit)"
+    },
+    {
+      "path": "04-save-load",
+      "title": "4. Cold Storage (Save & Load)"
+    },
+    {
+      "path": "05-registry-push-pull",
+      "title": "5. Going Global (Registry)"
+    },
+    {
+      "path": "06-image-types",
+      "title": "6. Image Types (Alpine/Distroless)"
+    },
+    {
+      "path": "07-image-security",
+      "title": "7. Best Practices (Security)"
     }
   ]
 }
