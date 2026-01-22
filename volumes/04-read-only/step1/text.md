@@ -24,8 +24,3 @@ We will mount a file as read-only and try to destroy it.
     docker exec viewer sh -c "echo 'hacked' > /app/config.ini"
     ```{{exec}}
     *Error: `Read-only file system`.*
-
-5.  Create a file `security_audit.txt` saying "SECURE" to confirm the test passed.
-    ```bash
-    echo "SECURE" > security_audit.txt
-    ```{{exec}}

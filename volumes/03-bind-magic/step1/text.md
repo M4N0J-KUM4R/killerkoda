@@ -21,7 +21,7 @@ We will run a web server and modify its content from the host, seeing changes in
 
 4.  **The Magic**: Edit the file on the **Host** (that's you).
     ```bash
-    echo "<h1>Version 2 - Updated!</h1>" > index.html
+    echo '<h1>Version 2 - Updated!</h1>' > index.html
     ```{{exec}}
 
 5.  Check the container again **immediately** (No rebuild needed):

@@ -1,17 +1,25 @@
 # Global Cleanup (Prune)
 
-Unused volumes can eat up gigabytes of disk space. Let's clean them up.
+Unused volumes can eat up disk space. "Unused" means **NO container** (running or stopped) is using it.
 
 ### Your Mission
-1.  **Prune** the mess (Delete all unused volumes):
+
+1.  **The blocking problem**:
+    If `important-data` is attached to a **Stopped** container, safe cleanup WON'T touch it.
+    Let's remove all stopped containers first:
+    ```bash
+    docker container prune -f
+    ```{{exec}}
+
+2.  **Prune Volumes**:
+    Now that no containers exist to hold the volumes, we can delete them:
     ```bash
     docker volume prune -f
     ```{{exec}}
-    *Watch it delete the random hash volume.*
-    *It will ALSO delete `important-data` because no container is currently using it!*
+    *Watch it delete `important-data` and any anonymous hashes.*
 
-2.  Check if `important-data` is gone:
+3.  Check if `important-data` is gone:
     ```bash
     docker volume ls
     ```{{exec}}
-    *It's gone. `prune` is powerful.*
+    *It should be empty now.*

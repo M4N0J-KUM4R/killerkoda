@@ -1,4 +1,4 @@
-# Step 1: The Immutable Rule (Recreation)
+# The Immutable Rule (Recreation)
 
 We have a container running without a volume. We realize we need to save its data.
 **Rule**: You CANNOT add a volume to a running container. You MUST recreate it.
