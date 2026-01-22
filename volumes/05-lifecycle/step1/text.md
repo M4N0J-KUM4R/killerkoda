@@ -1,8 +1,10 @@
-# Step 1: The Recreation
+# Step 1: The Immutable Rule (Recreation)
 
 We have a container running without a volume. We realize we need to save its data.
+**Rule**: You CANNOT add a volume to a running container. You MUST recreate it.
 
 ### Your Mission
+
 1.  Run a container (Oops, forgot the volume!):
     ```bash
     docker run -d --name forgetful-app alpine sleep infinity
@@ -20,21 +22,4 @@ We have a container running without a volume. We realize we need to save its dat
         ```bash
         docker run -d --name forgetful-app -v my-data:/data alpine sleep infinity
         ```{{exec}}
-
-4.  **One-off Copy**: What if you just want to copy files IN/OUT without restarting?
-    Use `docker cp`.
-    ```bash
-    echo "I slipped in" > slip.txt
-    docker cp slip.txt forgetful-app:/data/slip.txt
-    ```{{exec}}
-
-5.  Verify the file is inside:
-    ```bash
-    docker exec forgetful-app cat /data/slip.txt
-    ```{{exec}}
-    *Output: `I slipped in`*
-
-6.  Create a file `lifecycle_rule.txt` saying "RECREATE" to confirm you understand containers must be recreated to change mounts.
-    ```bash
-    echo "RECREATE" > lifecycle_rule.txt
-    ```{{exec}}
+        *The name `forgetful-app` is free again, so we reused it.*

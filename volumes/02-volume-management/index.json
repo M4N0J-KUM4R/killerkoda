@@ -8,9 +8,19 @@
     },
     "steps": [
       {
-        "title": "The Janitor",
+        "title": "Create & Inspect",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "The Anonymous Trap",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Global Cleanup (Prune)",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       }
     ],
     "finish": {

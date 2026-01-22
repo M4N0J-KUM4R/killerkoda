@@ -1,46 +1,24 @@
-# Step 1: Compare the Three
+# Bind Mounts (Host Mapping)
 
-Let's run three containers, each using a different storage type.
+**Bind Mounts** map a file or directory from your **Host** machine into the **Container**.
+- **Pros**: Great for development (edit code on host, see in container).
+- **Cons**: Dependent on the host's filesystem structure.
 
 ### Your Mission
-1.  **Bind Mount**: Map the current directory to `/bind`.
+
+1.  Create a file on the host:
     ```bash
     echo "I am from Host" > hostfile.txt
+    ```{{exec}}
+
+2.  Run a container using a Bind Mount:
+    ```bash
     docker run -d --name type-bind -v $(pwd):/bind alpine sleep infinity
     ```{{exec}}
+    *`-v $(pwd):/bind` means "Map my current folder to /bind inside".*
 
-2.  **Named Volume**: Let Docker manage it.
+3.  Verify the file exists inside:
     ```bash
-    docker run -d --name type-named -v my-vol:/named alpine sleep infinity
+    docker exec type-bind cat /bind/hostfile.txt
     ```{{exec}}
-
-3.  **Tmpfs**: In-memory only.
-    ```bash
-    docker run -d --name type-tmpfs --tmpfs /ramdisk alpine sleep infinity
-    ```{{exec}}
-
-4.  **Anonymous Volume**: The dangerous one. Persistent, but hard to find.
-    ```bash
-    docker run -d --name type-anon -v /anon-data alpine sleep infinity
-    ```{{exec}}
-
-4.  **Verify**:
-    - **Bind**: You should see `hostfile.txt` inside.
-      ```bash
-      docker exec type-bind ls /bind
-      ```{{exec}}
-    - **Named**: It should be empty (but persistent).
-      ```bash
-      docker exec type-named ls /named
-      ```{{exec}}
-    - **Tmpfs**: Write a file, stop container, start it -> File GONE.
-      ```bash
-      docker exec type-tmpfs sh -c "echo 'I see you' > /ramdisk/ghost"
-      docker restart type-tmpfs
-      docker exec type-tmpfs ls /ramdisk
-      ```{{exec}}
-      *Output should be empty! RAM was cleared on restart.*
-    - **Anonymous**: Inspect to see the random hash name.
-      ```bash
-      docker inspect --format '{{ json .Mounts }}' type-anon
-      ```{{exec}}
+    *Output should be "I am from Host".*

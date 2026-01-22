@@ -15,8 +15,3 @@ It's the **Userspace**: the file system, the package managers (apt vs yum vs apk
     ```{{exec}}
 
 3.  Notice the difference? The Kernel (`uname -r`) was the **same**, but the OS files (`/etc/os-release`) are **different**.
-
-4.  Prove you saw the difference by creating a file `os_check.txt` with the ID of the container's OS (which is `alpine`).
-    ```bash
-    echo "alpine" > os_check.txt
-    ```{{exec}}

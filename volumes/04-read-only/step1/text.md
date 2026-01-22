@@ -1,4 +1,4 @@
-# Step 1: The Locked File
+# The Locked File
 
 We will mount a file as read-only and try to destroy it.
 

@@ -1,6 +1,6 @@
 {
-  "title": "1. Storage Types (Bind, Named, Tmpfs)",
-  "description": "Understand the three types of Docker storage side-by-side.",
+  "title": "1. Storage Types (Bind, Named, Tmpfs, Anon)",
+  "description": "A side-by-side comparison of the 4 ways to store data in Docker.",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -8,9 +8,24 @@
     },
     "steps": [
       {
-        "title": "The Storage Trio",
+        "title": "Bind Mounts",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Named Volumes",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Tmpfs (RAM)",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Anonymous Volumes",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
       }
     ],
     "finish": {
