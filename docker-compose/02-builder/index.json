@@ -1,0 +1,23 @@
+{
+  "title": "2. The Builder (Build Contexts)",
+  "description": "Don't just run images, build them. Integrating Dockerfile into Compose.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Build it Here",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "1. The Migration (Run vs Compose)",
+  "description": "Stop typing long commands. Move to Infrastructure as Code with Docker Compose.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "From Chaos to Order",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

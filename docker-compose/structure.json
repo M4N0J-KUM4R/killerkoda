@@ -1,10 +1,26 @@
 {
   "title": "Module: Docker Compose",
-  "description": "Orchestrating multi-container applications.",
+  "description": "Master multi-container orchestration.",
   "items": [
     {
-      "path": "01-first-compose-up",
-      "title": "1. First Compose Up"
+      "path": "01-migration",
+      "title": "1. The Migration (Run vs Compose)"
+    },
+    {
+      "path": "02-builder",
+      "title": "2. The Builder (Build Contexts)"
+    },
+    {
+      "path": "03-dependencies",
+      "title": "3. Dependencies (Healthchecks)"
+    },
+    {
+      "path": "04-config-profiles",
+      "title": "4. Config & Profiles (Twelve-Factor)"
+    },
+    {
+      "path": "05-production",
+      "title": "5. Production Ready (Restart & Scaling)"
     }
   ]
 }

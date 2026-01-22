@@ -1,0 +1,23 @@
+{
+  "title": "5. Production Ready (Restart & Scaling)",
+  "description": "Ensure reliability with restart policies, prevent resource exhaustion with limits, and scale horizontally.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Scale and Survive",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
