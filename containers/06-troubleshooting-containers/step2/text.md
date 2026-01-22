@@ -25,7 +25,8 @@ The container `confused-app` is running, but it's not working right. We suspect 
     exit
     ```
 
-5.  Create a file `culprit.txt` with the value of the bad environment variable (which is `wronghost`).
+5.  **Fix it!** Launch a new container named `happy-app` with the correct host:
     ```bash
-    echo "wronghost" > culprit.txt
+    docker run -d --name happy-app -e DB_HOST=correcthost alpine sleep infinity
     ```
+

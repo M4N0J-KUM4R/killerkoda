@@ -1,2 +1,6 @@
 #!/bin/bash
-curl -s localhost:8080 | grep "Welcome to nginx"
+ 
+# Check if ANY nginx container is running
+if [ $(docker ps -q -f ancestor=nginx | wc -l) -eq 0 ]; then
+  exit 1
+fi

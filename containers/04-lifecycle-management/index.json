@@ -8,14 +8,24 @@
     },
     "steps": [
       {
-        "title": "Stop, Drop, and Roll (Stop vs Kill)",
+        "title": "Birth (Create vs Start)",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "The Immortal Container (Restart Policies)",
+        "title": "Frozen in Time (Pause vs Unpause)",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Stop, Drop, and Roll (Stop vs Kill)",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "The Immortal Container (Restart Policies)",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
       }
     ],
     "finish": {

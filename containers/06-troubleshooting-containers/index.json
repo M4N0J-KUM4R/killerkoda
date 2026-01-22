@@ -16,6 +16,16 @@
         "title": "Breaking In (Exec & Inspect)",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Crash Course (CrashLoopBackOff)",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Port Conflict (Address In Use)",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
       }
     ],
     "finish": {

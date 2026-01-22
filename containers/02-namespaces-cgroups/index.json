@@ -16,6 +16,11 @@
         "title": "The Walls of the Prison (Cgroups)",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Breaking the Illusion (Shared Namespaces)",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       }
     ],
     "finish": {

@@ -1,26 +1,25 @@
-# Step 2: The Immortal Container (Restart Policies)
+# Step 2: Frozen in Time (Pause)
 
-In production, apps crash. We want them to come back automatically.
-Docker has a feature for this: `--restart`.
+You can freeze a container's processes without stopping them completely.
 
 ### Your Mission
-1.  Run a container that is destined to fail (exit) immediately, but ask Docker to always restart it:
+1.  Run a container:
     ```bash
-    docker run -d --name zombie --restart always alpine sh -c "echo 'Brains...'; sleep 2; exit 1"
+    docker run -d --name time-machine alpine sleep infinity
     ```
 
-2.  Watch it crash and restart:
+2.  **Pause** it:
+    ```bash
+    docker pause time-machine
+    ```
+
+3.  Check status:
     ```bash
     docker ps
     ```
-    *Wait a few seconds and run `docker ps` again. Look at the "STATUS" column. It will say "Up X seconds" (resetting continuously).*
+    *Status: `Up ... (Paused)`*
 
-3.  Inspect the Restart Policy to confirm it is set to "always":
+4.  **Unpause** it to resume time:
     ```bash
-    docker inspect zombie | grep RestartPolicy -A 2
-    ```
-
-4.  We need to put this zombie to rest. To remove a restarting container, you must force remove it:
-    ```bash
-    docker rm -f zombie
+    docker unpause time-machine
     ```

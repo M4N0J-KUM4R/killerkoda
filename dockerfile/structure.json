@@ -5,6 +5,10 @@
     {
       "path": "01-basic-recipe",
       "title": "1. Basic Recipe"
+    },
+    {
+      "path": "05-cmd-vs-entrypoint",
+      "title": "2. CMD vs ENTRYPOINT"
     }
   ]
 }

@@ -8,14 +8,29 @@
     },
     "steps": [
       {
-        "title": "Hello, Docker!",
+        "title": "The Blocking Container (Foreground)",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "Opening the Gates (Port Mapping)",
+        "title": "Running in Background (-d)",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
+      },
+      {
+        "title": "What's Your Name? (--name)",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "The Ghost Container (--rm)",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Opening the Gates (Port Mapping)",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
       }
     ],
     "finish": {

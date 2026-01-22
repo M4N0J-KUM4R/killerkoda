@@ -1,23 +1,15 @@
-# Step 2: Opening the Gates (Port Mapping)
-
-Your web server is running, but it's locked inside the container network. You can't access it from the host!
-
-We need to map a **Host Port** to the **Container Port**.
-
+# Step 2: Running in Background (Detached)
+ 
+We don't want our terminal blocked. Let's run the container in **Detached Mode**.
+ 
 ### Your Mission
-1.  Kill the old container:
+1.  Run Nginx with the `-d` (detached) flag:
     ```bash
-    docker rm -f my-web-server
+    docker run -d nginx
     ```
-
-2.  Run it again, but map Host Port **8080** to Container Port **80**:
+    *You'll get a long ID back, but your terminal is free!*
+ 
+2.  Check if it's running:
     ```bash
-    docker run -d --name my-web-server -p 8080:80 nginx
+    docker ps
     ```
-    *Memory Aid: `-p HOST:CONTAINER` (Host is on the left, like your front door)*
-
-3.  Check if it works:
-    ```bash
-    curl localhost:8080
-    ```
-    You should see the "Welcome to nginx!" HTML.

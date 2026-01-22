@@ -1,3 +1,6 @@
 #!/bin/bash
-grep "INSTANT" lifecycle.txt
-docker ps -a | grep stubborn-app | grep Exited
+
+# Check if born-ready is running
+if [ $(docker inspect -f '{{.State.Running}}' born-ready) != "true" ]; then
+  exit 1
+fi

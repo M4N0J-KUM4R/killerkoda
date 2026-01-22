@@ -1,32 +1,27 @@
-# Step 1: Stop vs Kill
+# Step 1: Birth (Create vs Start)
 
-There are two ways to stop a container:
-1.  `docker stop`: Sends `SIGTERM`. "Please finish what you are doing and shut down." (Polite)
-2.  `docker kill`: Sends `SIGKILL`. "DIE NOW." (Rude)
+Usually, `docker run` does everything: pulls image, creates container, starts it.
+But sometimes you want to prepare a container without running it yet.
 
 ### Your Mission
-1.  Start a container that ignores `SIGTERM` (it's stubborn):
+1.  **Create** a container (but don't start it):
     ```bash
-    docker run -d --name stubborn-app alpine sh -c "trap 'echo I refuse to die' TERM; sleep infinity"
-    ```
-2.  Try to stop it politely:
-    ```bash
-    time docker stop stubborn-app
-    ```
-    *Observe that it takes 10 seconds!* Docker waited 10s, realized the app wasn't listening, and then killed it.
-
-3.  Start it again:
-    ```bash
-    docker start stubborn-app
+    docker create --name born-ready alpine sleep infinity
     ```
 
-4.  Now KILL it:
+2.  Check its status:
     ```bash
-    time docker kill stubborn-app
+    docker ps -a
     ```
-    *Instant death.*
+    *Status should be `Created`.*
 
-5.  Create a file `lifecycle.txt` with the word "INSTANT" if `docker kill` was faster than `docker stop`.
+3.  Now, **Start** it:
     ```bash
-    echo "INSTANT" > lifecycle.txt
+    docker start born-ready
     ```
+
+4.  Check status again:
+    ```bash
+    docker ps
+    ```
+    *Now it's `Up` (Running)!*

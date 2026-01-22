@@ -12,8 +12,11 @@ It's not in `docker ps`.
     ```bash
     docker logs crashing-app
     ```
-3.  You should see a "CRITICAL ERROR" message.
-4.  Create a file `cause_of_death.txt` with the text "DATABASE" (since the error was Database Connection Failed).
+3.  You should see a "CRITICAL ERROR: Missing DB_HOST" message.
+
+4.  **Fix it!** Run a new container named `fixed-app` with the missing variable:
     ```bash
-    echo "DATABASE" > cause_of_death.txt
+    docker run -d --name fixed-app -e DB_HOST=localhost alpine sleep infinity
     ```
+    *Now it should work (or at least stay running).*
+

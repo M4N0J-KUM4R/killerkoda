@@ -15,13 +15,13 @@ We can tell Docker to limit a container's memory. If it eats too much, the Kerne
     docker inspect weak-container | grep Memory
     ```
 
-3.  Now, let's look at the Cgroup file system on the **Host** (where the kernel keeps track):
-    *We need the full container ID first.*
+3.  Now, let's verify the limit using Docker's inspection tool (reliable across all systems):
     ```bash
-    ID=$(docker inspect -f '{{.Id}}' weak-container)
-    cat /sys/fs/cgroup/memory/docker/$ID/memory.limit_in_bytes
+    docker inspect weak-container | grep Memory
     ```
-    *Note: The path might be slightly different depending on cgroup version (v1 vs v2), but the concept remains.*
+    *You should see `"Memory": 10485760` (which is 10MB).*
+
+    *(Optional for Advanced Users: On some Linux systems, you can see this in `/sys/fs/cgroup/memory/docker/$ID/memory.limit_in_bytes` or `/sys/fs/cgroup/docker/$ID/memory.max`, but this varies heavily by OS version).*
 
 4.  Create a file `cgroup_limit.txt` containing the memory limit we set (10m).
     ```bash

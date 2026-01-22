@@ -19,12 +19,8 @@
       "title": "4. Lifecycle Management"
     },
     {
-      "path": "05-cmd-vs-entrypoint",
-      "title": "5. CMD vs ENTRYPOINT"
-    },
-    {
       "path": "06-troubleshooting-containers",
-      "title": "6. Troubleshooting"
+      "title": "5. Troubleshooting"
     }
   ]
 }
