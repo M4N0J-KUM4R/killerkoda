@@ -1,0 +1,23 @@
+{
+  "title": "2. Volume Management (create, ls, prune)",
+  "description": "Learn to manage the lifecycle of volumes: Create, List, Inspect, and Prune.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The Janitor",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

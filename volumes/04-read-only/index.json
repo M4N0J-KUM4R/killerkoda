@@ -1,0 +1,23 @@
+{
+  "title": "4. Look But Don't Touch (Read-Only)",
+  "description": "Enhance security by mounting volumes as Read-Only using the :ro flag.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The Locked File",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

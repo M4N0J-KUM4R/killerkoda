@@ -1,6 +1,6 @@
 {
-  "title": "1. Persistence: Bind Mounts vs Volumes",
-  "description": "Don't lose your data! Learn the difference between mapping a host folder and managing docker volumes.",
+  "title": "3. The Developer's Workflow (Bind Magic)",
+  "description": "Experience the speed of Bind Mounts for local development. Edit directly on the host.",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -8,7 +8,7 @@
     },
     "steps": [
       {
-        "title": "Bind Mounts (The Direct Link)",
+        "title": "Live Reloading",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       }

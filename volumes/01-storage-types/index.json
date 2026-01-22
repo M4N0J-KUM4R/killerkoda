@@ -1,0 +1,23 @@
+{
+  "title": "1. Storage Types (Bind, Named, Tmpfs)",
+  "description": "Understand the three types of Docker storage side-by-side.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The Storage Trio",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

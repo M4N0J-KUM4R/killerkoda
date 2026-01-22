@@ -1,0 +1,23 @@
+{
+  "title": "5. The Lifecycle (Hot-Swap Myth)",
+  "description": "Understand why you can't mount volumes to running containers and learn the 'Recreation' pattern.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The Recreation",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
