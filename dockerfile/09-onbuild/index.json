@@ -1,0 +1,23 @@
+{
+  "title": "9. Triggers (ONBUILD)",
+  "description": "Create reusable base images that execute instructions when used as a foundation.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Planting the Trigger",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

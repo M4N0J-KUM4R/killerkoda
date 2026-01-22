@@ -1,0 +1,28 @@
+{
+  "title": "3. Build vs Runtime (ARG vs ENV)",
+  "description": "Understand the scope of variables. Use ARG for build configurations and ENV for application settings.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Build Arguments (ARG)",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Environment Variables (ENV)",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

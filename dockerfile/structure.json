@@ -4,11 +4,43 @@
   "items": [
     {
       "path": "01-basic-recipe",
-      "title": "1. Basic Recipe"
+      "title": "1. The Foundation (FROM, RUN, WORKDIR)"
+    },
+    {
+      "path": "02-copy-vs-add",
+      "title": "2. Moving In (COPY vs ADD)"
+    },
+    {
+      "path": "03-arg-vs-env",
+      "title": "3. Variables (ARG vs ENV)"
+    },
+    {
+      "path": "04-interfaces",
+      "title": "4. Interfaces (EXPOSE & VOLUME)"
     },
     {
       "path": "05-cmd-vs-entrypoint",
-      "title": "2. CMD vs ENTRYPOINT"
+      "title": "5. Start Me Up (CMD vs ENTRYPOINT)"
+    },
+    {
+      "path": "06-multi-stage",
+      "title": "6. Dieting (Multi-Stage Builds)"
+    },
+    {
+      "path": "07-healthcheck",
+      "title": "7. Self-Healing (HEALTHCHECK)"
+    },
+    {
+      "path": "08-user-instruction",
+      "title": "8. Security (USER)"
+    },
+    {
+      "path": "09-onbuild",
+      "title": "9. Triggers (ONBUILD)"
+    },
+    {
+      "path": "10-stopsignal",
+      "title": "10. Graceful Exit (STOPSIGNAL)"
     }
   ]
 }

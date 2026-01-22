@@ -1,0 +1,23 @@
+{
+  "title": "10. Graceful Exit (STOPSIGNAL)",
+  "description": "Configure how your container handles shutdown requests.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Changing the Signal",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
