@@ -1,4 +1,4 @@
-# Step 1: The Local Registry
+# The Local Registry
 
 First, we need a place to store our images. We'll start a simple registry server.
 

@@ -1,4 +1,4 @@
-# Step 1: Live Edits
+# Live Edits
 
 We will run a web server and modify its content from the host, seeing changes instantly.
 

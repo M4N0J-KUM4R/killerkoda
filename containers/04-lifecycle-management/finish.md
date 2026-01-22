@@ -5,4 +5,4 @@ You now understand:
 -   **Force kill**: `docker kill` is for emergencies.
 -   **Self-Healing**: `--restart always` keeps your services running even if they crash.
 
-Next, we tackle the most confusing topic in Docker history: **CMD vs ENTRYPOINT**.
+Now, time to get into some trouble.

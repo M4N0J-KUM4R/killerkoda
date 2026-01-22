@@ -1,4 +1,4 @@
-# Step 2: Frozen in Time (Pause)
+# Frozen in Time (Pause)
 
 You can freeze a container's processes without stopping them completely.
 
@@ -23,3 +23,9 @@ You can freeze a container's processes without stopping them completely.
     ```bash
     docker unpause time-machine
     ```{{exec}}
+
+5.  Check status:
+    ```bash
+    docker ps
+    ```{{exec}}
+    *Status: `Up ...`*

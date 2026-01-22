@@ -1,4 +1,4 @@
-# Step 1: Exporting an Image
+# Exporting an Image
 
 We need to send our `alpine` image to a secret off-grid server.
 

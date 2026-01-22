@@ -10,8 +10,3 @@ MEM=$(docker inspect -f '{{.HostConfig.Memory}}' weak-container)
 if [ "$MEM" != "10485760" ]; then
   exit 1
 fi
-
-# Check if cgroup_limit.txt exists (user task)
-if [ ! -f cgroup_limit.txt ]; then
-  exit 1
-fi

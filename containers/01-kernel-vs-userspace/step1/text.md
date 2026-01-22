@@ -1,4 +1,4 @@
-# Step 1: One Kernel to Rule Them All
+# One Kernel to Rule Them All
 
 If containers share the host's kernel, then `uname -r` (which prints the kernel release) should be identical inside and outside the container.
 

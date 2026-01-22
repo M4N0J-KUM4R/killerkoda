@@ -1,4 +1,4 @@
-# Step 1: The Size Wars
+# The Size Wars
 
 Let's compare the file sizes of different base images.
 
@@ -21,8 +21,3 @@ Let's compare the file sizes of different base images.
 
 3.  What about **Scratch**?
     `scratch` is special. It has **0 bytes**. It is empty. You can't pull it. You can only verify it exists in Docker's reserved words or use it in a `Dockerfile`.
-    
-4.  Create a file `winner.txt` with the name of the smallest pullable image from the list above (Alpine vs Distroless).
-    ```bash
-    echo "distroless" > winner.txt
-    ```{{exec}}

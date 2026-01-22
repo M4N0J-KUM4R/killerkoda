@@ -1,4 +1,4 @@
-# Step 2: Breaking In (Exec & Inspect)
+# Breaking In (Exec & Inspect)
 
 The container `confused-app` is running, but it's not working right. We suspect a configuration issue.
 
@@ -30,3 +30,8 @@ The container `confused-app` is running, but it's not working right. We suspect 
     docker run -d --name happy-app -e DB_HOST=correcthost alpine sleep infinity
     ```{{exec}}
 
+6.  **Check** the container to see Updated Environment Variables:
+    ```bash
+    docker inspect happy-app | grep Env -A 5
+    ```{{exec}}
+    *Do you see `DB_HOST=correcthost`? That looks good.*

@@ -1,4 +1,4 @@
-# Step 3: What's Your Name?
+# What's Your Name?
  
 By default, Docker gives random names like `suspicious_cori`. Let's give it a real name.
  

@@ -1,4 +1,4 @@
-# Step 2: The Immortal Container (Restart Policies)
+# The Immortal Container (Restart Policies)
 
 In production, apps crash. We want them to come back automatically.
 Docker has a feature for this: `--restart`.
@@ -11,7 +11,7 @@ Docker has a feature for this: `--restart`.
 
 2.  Watch it crash and restart:
     ```bash
-    docker ps
+    watch docker ps
     ```{{exec}}
     *Wait a few seconds and run `docker ps` again. Look at the "STATUS" column. It will say "Up X seconds" (resetting continuously).*
 

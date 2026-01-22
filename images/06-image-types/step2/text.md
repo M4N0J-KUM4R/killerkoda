@@ -1,4 +1,4 @@
-# Step 2: The "Shell" Shock
+# The "Shell" Shock
 
 Why use Distroless? Security.
 Hackers love shells (`bash`, `sh`). If they hack your app, they want to run commands.
@@ -19,8 +19,3 @@ Hackers love shells (`bash`, `sh`). If they hack your app, they want to run comm
 
 3.  This is a feature, not a bug! 
     It forces you to debug differently (using logs or ephemeral debug containers) but keeps your production environment lock-tight.
-
-4.  Create a file `secure.txt` confirming you understand this creates a smaller attack surface.
-    ```bash
-    echo "NO_SHELL" > secure.txt
-    ```{{exec}}

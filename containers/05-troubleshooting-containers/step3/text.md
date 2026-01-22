@@ -1,4 +1,4 @@
-# Step 3: Crash Course (Immediate Exit)
+# Crash Course (Immediate Exit)
 
 Sometimes a container starts and dies immediately. Docker calls this "Exited". Kubernetes calls it "CrashLoopBackOff".
 

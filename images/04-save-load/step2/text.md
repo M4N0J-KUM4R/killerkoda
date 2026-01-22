@@ -1,4 +1,4 @@
-# Step 2: Importing the Image
+# Importing the Image
 
 We have arrived at the off-grid server with our tarball.
 

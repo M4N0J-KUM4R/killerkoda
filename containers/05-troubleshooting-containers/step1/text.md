@@ -1,4 +1,4 @@
-# Step 1: The Silent Treatment (Logs)
+# The Silent Treatment (Logs)
 
 The container `crashing-app` started and immediately died.
 It's not in `docker ps`.

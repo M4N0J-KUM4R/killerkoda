@@ -1,4 +1,4 @@
-# Step 2: Different Worlds (Userspaces)
+# Different Worlds (Userspaces)
 
 So the *Kernel* is the same. What makes Fedora "Fedora" and Alpine "Alpine"?
 It's the **Userspace**: the file system, the package managers (apt vs yum vs apk), and the binaries.

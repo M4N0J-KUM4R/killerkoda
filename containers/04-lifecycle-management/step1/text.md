@@ -1,4 +1,4 @@
-# Step 1: Birth (Create vs Start)
+# Birth (Create vs Start)
 
 Usually, `docker run` does everything: pulls image, creates container, starts it.
 But sometimes you want to prepare a container without running it yet.

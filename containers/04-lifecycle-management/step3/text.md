@@ -1,4 +1,4 @@
-# Step 1: Stop vs Kill
+# Stop vs Kill
 
 There are two ways to stop a container:
 1.  `docker stop`: Sends `SIGTERM`. "Please finish what you are doing and shut down." (Polite)
@@ -25,8 +25,3 @@ There are two ways to stop a container:
     time docker kill stubborn-app
     ```{{exec}}
     *Instant death.*
-
-5.  Create a file `lifecycle.txt` with the word "INSTANT" if `docker kill` was faster than `docker stop`.
-    ```bash
-    echo "INSTANT" > lifecycle.txt
-    ```{{exec}}

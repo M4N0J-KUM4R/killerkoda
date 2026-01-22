@@ -1,4 +1,4 @@
-# Step 1: The Illusion of Isolation (Namespaces)
+# The Illusion of Isolation (Namespaces)
 
 When you start a container, it thinks it is the only thing running on the machine (PID 1).
 
@@ -21,6 +21,3 @@ When you start a container, it thinks it is the only thing running on the machin
     *Can the container see the `sleep 1000` process?* NO.
     
     You only see the container's own processes (PID 1 is sleep).
-
-4.  (Verification) We will check if `iso-test` is running.
-

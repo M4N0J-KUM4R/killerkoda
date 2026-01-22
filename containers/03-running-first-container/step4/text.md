@@ -1,4 +1,4 @@
-# Step 4: The Ghost Container (--rm)
+# The Ghost Container (--rm)
  
 Sometimes you want a container to do a job and disappear immediately, leaving no trace.
  

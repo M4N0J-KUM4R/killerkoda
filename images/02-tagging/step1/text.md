@@ -1,4 +1,4 @@
-# Step 1: The Identity Crisis (Tagging)
+# The Identity Crisis (Tagging)
 
 A "Tag" is just a sticky note on an Image ID. You can have multiple sticky notes on the same image.
 

@@ -1,4 +1,4 @@
-# Step 2: Opening the Gates (Port Mapping)
+# Opening the Gates (Port Mapping)
 
 Your web server is running, but it's locked inside the container network. You can't access it from the host!
 

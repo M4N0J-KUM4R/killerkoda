@@ -1,4 +1,4 @@
-# Step 2: Push & Pull
+# Push & Pull
 
 Now let's upload our image and verify we can download it back.
 

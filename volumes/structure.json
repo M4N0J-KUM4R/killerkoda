@@ -3,8 +3,24 @@
   "description": "Persisting data beyond the container lifecycle.",
   "items": [
     {
-      "path": "01-bind-mounts-vs-volumes",
-      "title": "1. Bind Mounts vs Volumes"
+      "path": "01-storage-types",
+      "title": "1. Storage Types"
+    },
+    {
+      "path": "02-volume-management",
+      "title": "2. Volume Management"
+    },
+    {
+      "path": "03-bind-magic",
+      "title": "3. Bind Magic"
+    },
+    {
+      "path": "04-read-only",
+      "title": "4. Read Only"
+    },
+    {
+      "path": "05-lifecycle",
+      "title": "5. Lifecycle"
     }
   ]
 }

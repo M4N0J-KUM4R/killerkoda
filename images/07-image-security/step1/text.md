@@ -1,4 +1,4 @@
-# Step 1: The Root Problem
+# The Root Problem
 
 By default, Docker containers run as **Root**. This means if a hacker escapes the container, they are Root on your host.
 
@@ -20,8 +20,3 @@ By default, Docker containers run as **Root**. This means if a hacker escapes th
     docker run --rm nginxinc/nginx-unprivileged touch /boot/test
     ```{{exec}}
     *Permission denied! This is what we want.*
-
-4.  Create a file `best_practice.txt` with the UID of the safer image (101).
-    ```bash
-    echo "101" > best_practice.txt
-    ```{{exec}}

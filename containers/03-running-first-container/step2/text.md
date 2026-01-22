@@ -1,4 +1,4 @@
-# Step 2: Running in Background (Detached)
+# Running in Background (Detached)
  
 We don't want our terminal blocked. Let's run the container in **Detached Mode**.
  

@@ -1,4 +1,4 @@
-# Step 1: DIY Image (Commit)
+# DIY Image (Commit)
 
 Before Dockerfiles existed, people made images by hand. It's like taking a snapshot of a VM.
 

@@ -1,4 +1,4 @@
-# Step 1: The Blocking Container (Foreground)
+# The Blocking Container (Foreground)
  
 The command to start a container is simplicity itself: `docker run`.
  
