@@ -6,12 +6,12 @@ By default, containers have their own PID namespace. But what if we want two con
 1.  Run a background container named `target-app`:
     ```bash
     docker run -d --name target-app alpine sleep infinity
-    ```
+    ```{{exec}}
 
 2.  Run a second container that joins the **PID namespace** of `target-app`:
     ```bash
     docker run --rm --pid=container:target-app alpine ps aux
-    ```
+    ```{{exec}}
     *Look! You can see the `sleep infinity` process from the first container!*
 
 3.  Verify they are sharing the same PID namespace by checking the PID of the sleep process.
@@ -19,4 +19,4 @@ By default, containers have their own PID namespace. But what if we want two con
 4.  Create a file `shared.txt` to confirm success (Docker will verify the container execution).
     ```bash
     echo "SHARED" > shared.txt
-    ```
+    ```{{exec}}

@@ -1,6 +1,6 @@
 # The Red Pill: What is a Container?
 
-Welcome, Neo.
+Welcome,
 
 You've heard that **Docker containers** are "lightweight virtual machines". That is a lie.
 Unlike a Virtual Machine (VM) which has its own Kernel, a Docker container **shares** the Kernel of the host machine.
