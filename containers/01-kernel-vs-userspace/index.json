@@ -9,8 +9,7 @@
     "steps": [
       {
         "title": "One Kernel to Rule Them All",
-        "text": "step1/text.md",
-        "verify": "step1/verify.sh"
+        "text": "step1/text.md"
       },
       {
         "title": "Different Worlds (Userspaces)",
