@@ -15,12 +15,14 @@ Docker has a feature for this: `--restart`.
     ```{{exec}}
     *Wait a few seconds and run `docker ps` again. Look at the "STATUS" column. It will say "Up X seconds" (resetting continuously).*
 
-3.  Inspect the Restart Policy to confirm it is set to "always":
+3.  Press `Ctrl+C` to stop it.
+
+4.  Inspect the Restart Policy to confirm it is set to "always":
     ```bash
     docker inspect zombie | grep RestartPolicy -A 2
     ```{{exec}}
 
-4.  We need to put this zombie to rest. To remove a restarting container, you must force remove it:
+5.  We need to put this zombie to rest. To remove a restarting container, you must force remove it:
     ```bash
     docker rm -f zombie
     ```{{exec}}

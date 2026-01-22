@@ -5,14 +5,14 @@ Unused volumes can eat up disk space. "Unused" means **NO container** (running o
 ### Your Mission
 
 1.  **The blocking problem**:
-    If `important-data` is attached to a **Stopped** container, safe cleanup WON'T touch it.
-    Let's remove all stopped containers first:
+    If `important-data` is attached to a **Running** or **Stopped** container, safe cleanup WON'T touch it.
+    Let's find and destroy any container holding our volume:
     ```bash
-    docker container prune -f
+    for id in $(docker ps -aq --filter volume=important-data); do docker rm -f $id; done
     ```{{exec}}
 
 2.  **Prune Volumes**:
-    Now that no containers exist to hold the volumes, we can delete them:
+    Now that the volume is definitely unused, we can delete it:
     ```bash
     docker volume prune -f
     ```{{exec}}
@@ -22,4 +22,4 @@ Unused volumes can eat up disk space. "Unused" means **NO container** (running o
     ```bash
     docker volume ls
     ```{{exec}}
-    *It should be empty now.*
+    *It should be empty / gone now.*
