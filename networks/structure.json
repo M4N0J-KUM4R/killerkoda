@@ -1,10 +1,26 @@
 {
   "title": "Module: Networks",
-  "description": "Connecting containers securely.",
+  "description": "Master container communication, service discovery, and network types.",
   "items": [
     {
-      "path": "01-container-networking",
-      "title": "1. Container Networking"
+      "path": "01-network-types",
+      "title": "1. The Network Inventory (Types)"
+    },
+    {
+      "path": "02-dns-discovery",
+      "title": "2. DNS Discovery (Custom Networks)"
+    },
+    {
+      "path": "03-app-db",
+      "title": "3. App + DB (Service Connection)"
+    },
+    {
+      "path": "04-multi-homing",
+      "title": "4. Multi-Homing (Network Connect)"
+    },
+    {
+      "path": "05-dns-aliases",
+      "title": "5. DNS Aliases (Internal Load Balancing)"
     }
   ]
 }

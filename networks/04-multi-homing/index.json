@@ -1,6 +1,6 @@
 {
-  "title": "1. Connecting the Dots: Container Networking",
-  "description": "How do containers talk to each other? Learn about the Docker Bridge and DNS.",
+  "title": "4. Multi-Homing (Network Connect)",
+  "description": "Connect a single container to multiple isolated networks for better security segmentation.",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -8,7 +8,7 @@
     },
     "steps": [
       {
-        "title": "Ping Pong (The Bridge Network)",
+        "title": "The Bridge Builder",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       }

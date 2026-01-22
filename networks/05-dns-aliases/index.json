@@ -1,0 +1,23 @@
+{
+  "title": "5. DNS Aliases (Internal Load Balancing)",
+  "description": "Use --network-alias to implement client-side load balancing via DNS round-robin.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "The Magic Name",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

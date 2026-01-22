@@ -1,0 +1,23 @@
+{
+  "title": "2. DNS Discovery (Custom Networks)",
+  "description": "Why you should never use the default bridge. Learn about automatic Service Discovery.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "steps": [
+      {
+        "title": "Default vs Custom Bridge",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
